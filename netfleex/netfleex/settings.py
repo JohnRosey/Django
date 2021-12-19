@@ -56,6 +56,7 @@ MIDDLEWARE = [
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 ROOT_URLCONF = 'netfleex.urls'
+LOGIN_REDIRECT_URL = 'home'
 
 TEMPLATES = [
     {

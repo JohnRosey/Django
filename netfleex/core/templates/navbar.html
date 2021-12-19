@@ -20,19 +20,21 @@
                         <span class="visually-hidden">(current)</span>
                     </a>
                 </li>
+                {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="/user"> User</a>
+                    <a class="nav-link" href="/user"> {{user.username}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/logout">logout</a>
                 </li>
-               
+                {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="/subscribe">Enregistrer</a>
+                    <a class="nav-link" href="/register">Enregistrer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/connexion">Connexion</a>
+                    <a class="nav-link" href="#">Connexion</a>
                 </li>
+                {% endif %}
                <!-- Eater egg dropdown About-->>
             </ul>
 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
