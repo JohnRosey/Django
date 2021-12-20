@@ -1,0 +1,18 @@
+{% extends "core/navbar.html" %}
+
+{% block content %}
+
+<h1>You searched For</h1>
+
+{% if searched %}
+<h1>You searched For</h1>
+<br/>
+{% for netfleex in mod %}
+{{netfleex}}<br/>
+<iframe>{{netfleex.Contenu_film}}</iframe><br/>
+{{netfleex.Date_publication}}<br/>
+
+{% endfor %}
+
+
+{% endif %}

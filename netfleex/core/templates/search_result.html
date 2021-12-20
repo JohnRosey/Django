@@ -1,0 +1,23 @@
+{% extends "header.html" %}
+
+{% block content %}
+<center>
+    {% if searched %}
+    <h1>
+        You searched For {{searched}}
+    </h1>
+    </br>
+    {%  for netfeelex in netfeelex %}
+    {{ netfeelex }}</br>
+    {% endfor %}
+
+    {% else %}
+    <h1>
+        Hey ! You forgot to
+    </h1>
+    {% endif %}
+</center>
+
+
+
+{% endblock %} 
