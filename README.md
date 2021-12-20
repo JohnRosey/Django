@@ -32,3 +32,4 @@ Vous pouvez désormais créer un nouvel environnement virtuel avec la commande  
     python manage.py runserver
  En cas de problèmes aller dans settings.py et supprimer dans INSTALLED_APPS la ligne problématique 
 
+**Source**: https://developer.mozilla.org/fr/docs/Learn/Server-side/Django/development_environment
