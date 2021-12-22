@@ -4,11 +4,11 @@
 <center>
     {% if searched %}
     <h1>
-        You searched For {{searched}}
+        Vous avez chercher: {{searched}}
     </h1>
     </br>
     {%  for netfeelex in netfeelex %}
-    {{ netfeelex }}</br>
+    {{ netfeelex }}-- Categorie est : {{netfeelex.category}}</br>
     {% endfor %}
 
     {% else %}
